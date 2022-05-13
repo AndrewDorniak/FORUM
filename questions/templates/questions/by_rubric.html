@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Раздел {{choosen_rubric}} </title>
+</head>
+<body>
+<a href="{% url 'index' %}">Главная</a>
+<h1> Все вопросы в разделе "{{choosen_rubric}}" </h1>
+{% for sub in choosen_rubric_subjects %}
+<div>
+    <h4> <a href="{{sub.pk}}">{{sub.title}}</a></h4>
+    <p> {{sub.user_name}} </p>
+    <p> {{sub.published}} </p>
+</div>
+{% endfor %}
+</body>
+</html>
+
+
+

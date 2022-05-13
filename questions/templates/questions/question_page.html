@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопрос :: {{choosen_subject}}</title>
+</head>
+<body>
+<a href="{% url 'index' %}">Главная |</a>
+<div>
+   <h2> {{choosen_subject.title}} </h2>
+    <p> {{choosen_subject.user_name}} </p>
+    <p> {{choosen_subject.content}} </p>
+    <p> {{choosen_subject.media_files}} </p>
+    <p> {{sub.published}} </p>
+</div>
+
+
+</body>
+</html>

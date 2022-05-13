@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная :: Список рубрик</title>
+</head>
+<body>
+<h1> Рубрики </h1>
+{% for rub in rubrics %}
+<div>
+    <a href='{% url "linc_by_rubric" rub.pk %}'> {{rub.name}}</a>
+
+</div>
+{% endfor %}
+</body>
+</html>
